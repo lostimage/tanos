@@ -1,0 +1,11 @@
+{
+  "name": "tanos",
+  "version": "1.0.0",
+  "dependencies": {
+    "html2canvas": "^1.0.0-rc.7",
+    "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "sass": "^1.32.6"
+  }
+}

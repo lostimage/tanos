@@ -1,0 +1,65 @@
+body {
+  overflow-x: hidden;
+}
+
+article {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(20vw - 2rem);
+  height: calc(50vh - 2rem);
+  cursor: pointer;
+  position: relative;
+}
+@media only screen and (max-width: 1024px) {
+  article {
+    width: calc(50vw - 2rem);
+    height: auto;
+  }
+}
+@media only screen and (max-width: 640px) {
+  article {
+    width: calc(100vw - 2rem);
+  }
+}
+article p {
+  padding: 10px;
+}
+article:after {
+  position: absolute;
+  content: "Click to Destroy";
+  left: 50%;
+  top: 50%;
+  color: red;
+  width: 80%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  border: 3px solid red;
+  padding: 5px;
+}
+
+.flex-wrapper {
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.flex-wrapper canvas {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+}
+
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=/app.c328ef1a.css.map */
